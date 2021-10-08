@@ -1,0 +1,28 @@
+var num : [Int]=[10,5,10];
+var first,second,f : Int;
+var size=num.count-1;
+first=num[0];
+second=0;
+f=1
+for i in num
+{
+  if(i>first)
+  {
+    first=i;
+  }
+}
+for j in num
+{
+ if(j>second) {
+   if(first==j){
+   }else{
+     f=0
+     second=j;
+   }
+  }
+}
+if(f==1){
+  print("not found")
+}else{
+  print("second highest number is:",second);
+}
